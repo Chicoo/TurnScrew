@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>TurnScrew.Wiki.AclEngine</AssemblyName>
+    <RootNamespace>TurnScrew.Wiki.AclEngine</RootNamespace>
+  </PropertyGroup>
+
+</Project>
