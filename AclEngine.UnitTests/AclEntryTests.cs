@@ -59,7 +59,7 @@ namespace TurnScrew.Wiki.AclEngine.UnitTests
         }
 
         [Fact]
-        public void StoreEntry_Subject_Empty()
+        public void Constructor_Subject_Empty()
         {
             var ex = Assert.Throws<ArgumentException>(() => new AclEntry("Res", "Action", "", Value.Grant));
             Assert.Equal("Subject cannot be empty.\r\nParameter name: subject", ex.Message);
