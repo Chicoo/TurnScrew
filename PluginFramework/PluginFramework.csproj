@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>TurnScrew.Wiki.PluginFramework</AssemblyName>
+    <RootNamespace>TurnScrew.Wiki.PluginFramework</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AclEngine\AclEngine.csproj" />
+    <ProjectReference Include="..\SearchEngine\SearchEngine.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,16 +1,11 @@
+using Moq;
 using System;
 using System.Collections.Generic;
-using Moq;
 
 namespace TurnScrew.Wiki.SearchEngine.UnitTests
 {
     public class TestsBase
     {
-        /// <summary>
-        /// A general purpose mock repository, initalized dusing test fixture setup.
-        /// </summary>
-        private MockRepository looseMocks;
-
         /// <summary>
         /// Demo content for a plain-text document.
         /// </summary>

@@ -319,7 +319,7 @@ namespace TurnScrew.Wiki.SearchEngine.UnitTests
             OccurrenceDictionary dic = new OccurrenceDictionary();
             dic.Add(MockDocument("Doc1", "Doc1", "d", DateTime.Now), new SortedBasicWordInfoSet());
             dic.Clear();
-            Assert.Equal(0, dic.Count);
+            Assert.Empty(dic);
         }
 
         [Fact]

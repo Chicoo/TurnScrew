@@ -1,11 +1,13 @@
 ﻿using System;
 
-namespace TurnScrew.Wiki.AclEngine {
+namespace TurnScrew.Wiki.AclEngine
+{
 
-	/// <summary>
-	/// Contains arguments for the <see cref="IAclManager.AclChanged" /> event.
-	/// </summary>
-	public class AclChangedEventArgs : EventArgs {
+    /// <summary>
+    /// Contains arguments for the <see cref="IAclManager.AclChanged" /> event.
+    /// </summary>
+    public class AclChangedEventArgs : EventArgs
+    {
 
         /// <summary>
         /// Initializes a new instance of the <see cref="T:AclChangedEventArgs" /> class.
@@ -14,13 +16,14 @@ namespace TurnScrew.Wiki.AclEngine {
         /// <param name="change">The change.</param>
         /// <exception cref="ArgumentNullException">If <paramref name="entries"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException">If <paramref name="entries"/> is empty.</exception>
-        public AclChangedEventArgs(AclEntry[] entries, Change change) {
-			if(entries == null) throw new ArgumentNullException("entries");
-			if(entries.Length == 0) throw new ArgumentException("Entries cannot be empty.", "entries");
+        public AclChangedEventArgs(AclEntry[] entries, Change change)
+        {
+            if (entries == null) throw new ArgumentNullException("entries");
+            if (entries.Length == 0) throw new ArgumentException("Entries cannot be empty.", "entries");
 
-			Entries = entries;
-			Change = change;
-		}
+            Entries = entries;
+            Change = change;
+        }
 
         /// <summary>
         /// Gets the entries that changed.
@@ -34,18 +37,19 @@ namespace TurnScrew.Wiki.AclEngine {
 
     }
 
-	/// <summary>
-	/// Lists legal changes for ACL entries.
-	/// </summary>
-	public enum Change {
-		/// <summary>
-		/// An entry is stored.
-		/// </summary>
-		EntryStored,
-		/// <summary>
-		/// An entry is deleted.
-		/// </summary>
-		EntryDeleted
-	}
+    /// <summary>
+    /// Lists legal changes for ACL entries.
+    /// </summary>
+    public enum Change
+    {
+        /// <summary>
+        /// An entry is stored.
+        /// </summary>
+        EntryStored,
+        /// <summary>
+        /// An entry is deleted.
+        /// </summary>
+        EntryDeleted
+    }
 
 }
